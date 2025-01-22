@@ -2,15 +2,12 @@
   <div class="grid place-items-center">
   <br>
   <body>
-    <h1>あなたの名前と誕生月を入力してね</h1>
+    <h1>あなたの名前と誕生日を入力してね</h1>
     <%= form_with(model: @user) do |f| %>
       <%= f.label :name, "名前" %><br>
-      <%= f.text_field :name %><br>
-      <%= f.label :birth_date, "誕生月" %><br>
-      <%= f.select :birth_date, [
-  ['1月', 1], ['2月', 2], ['3月', 3], ['4月', 4], ['5月', 5], ['6月', 6],
-  ['7月', 7], ['8月', 8], ['9月', 9], ['10月', 10], ['11月', 11], ['12月', 12]
-], prompt: '月を選択してください' %><br>
+      <%= f.text_field :mame %><br>
+      <%= f.label :birth_date, "誕生日" %><br>
+      <%= f.date_select :birth_date, { start_year: 1950, end_year: 2024, use_two_digit_numbers: true } %><br>
       <%= link_to "検索する", "#", class: "btn btn-wide bg-amber-300 hover:bg-red-300 text-white text-xl my-8" %>
     <% end %>
   </body>
