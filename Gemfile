@@ -21,6 +21,10 @@ gem "jbuilder"
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
+# 開発環境やテスト環境で環境変数を管理するためのライブラリ
+# これを使うことで、環境ごとに異なる設定を簡単に管理できる
+gem "dotenv", groups: [ :development, :test ]
+
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
