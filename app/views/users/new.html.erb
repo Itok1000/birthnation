@@ -6,8 +6,8 @@
     <%= form_with(model: @user) do |f| %>
       <%= f.label :name, "名前" %><br>
       <%= f.text_field :name %><br>
-      <%= f.label :birth_month, "誕生月" %><br>
-      <%= f.select :birth_month, [
+      <%= f.label :birth_date, "誕生月" %><br>
+      <%= f.select :birth_date, [
   ['1月', 1], ['2月', 2], ['3月', 3], ['4月', 4], ['5月', 5], ['6月', 6],
   ['7月', 7], ['8月', 8], ['9月', 9], ['10月', 10], ['11月', 11], ['12月', 12]
 ], prompt: '月を選択してください' %><br>
