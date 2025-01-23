@@ -25,7 +25,6 @@ gem "jbuilder"
 # これを使うことで、環境ごとに異なる設定を簡単に管理できる
 gem "dotenv", groups: [ :development, :test ]
 
-gem "faraday"
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
