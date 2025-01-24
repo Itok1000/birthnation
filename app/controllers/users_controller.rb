@@ -12,6 +12,7 @@ class UsersController < ApplicationController
 
     def result
       @user = User.find(params[:id])
+      @national_day = @user.find_closest_national_day
     end
 
     private
