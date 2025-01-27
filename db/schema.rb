@@ -18,6 +18,8 @@ ActiveRecord::Schema[7.2].define(version: 2025_01_24_064952) do
     t.string "country_name", null: false
     t.date "national_day", null: false
     t.string "description"
+    t.string "remark"
+    t.string "image_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
