@@ -7,12 +7,21 @@
       
       <% if @national_day.present? %>
         <h2>あなたの誕生日に近い国の誕生日はこちら</h2>
+        <br>
+        <p>
+          <img src="<%= @national_day.image_url %>"
+               class="w-32 h-auto rounded shadow-lg" />
+        </p>
+        <br>
         <p>国名: <%= @national_day.country_name %></p>
         <p>日付: <%= @national_day.national_day.strftime("%m月%d日") %></p>
         <p>説明: <%= @national_day.description %></p>
+        <p>補足: <%= @national_day.remark %></p>
       <% else %>
         <p>あなたの誕生日に近い建国記念日は見つかりませんでした。</p>
       <% end %>
+      <%= link_to "もう一回", new_users_path, class: "btn btn-wide bg-cyan-400 hover:bg-lime-300 text-white text-xl my-3" %><br>
+      <%= link_to "トップに戻る", root_path, class: "btn btn-wide bg-yellow-400 hover:bg-red-300 text-white text-xl" %>
     </body>
   </div>
 </div>

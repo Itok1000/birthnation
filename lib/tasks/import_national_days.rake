@@ -8,7 +8,9 @@ namespace :import do
         NationalDay.create!(
           country_name: row["country_name"],
           national_day: Date.strptime(row["national_day"], "%m-%d"),
-          description: row["description"]
+          description: row["description"],
+          remark: row["remark"],
+          image_url: row["image_url"]
         )
       end
       puts "National days imported successfully!"
