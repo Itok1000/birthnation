@@ -6,7 +6,7 @@ class UsersController < ApplicationController
     if @user.save
       redirect_to result_path(id: @user.id)
     else
-      redirect_to new_users_path
+      redirect_to new_users_path, danger: 'エラーが発生しました'
     end
   end
 
