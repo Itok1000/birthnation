@@ -21,4 +21,3 @@ class UsersController < ApplicationController
     params.require(:user).permit(:name, :birth_month, :birth_day)
   end
 end
-
