@@ -1,20 +1,23 @@
 <div class="text-center my-10">
   <div class="grid place-items-center">
-  <br>
-  <body>
-     <h1 class="font-bold text-3xl text-red-300">あなたの名前と誕生日を入力してね</h1>
+    <br>
+    <body>
+      <h1 class="font-bold text-3xl text-red-300">あなたの名前と誕生日を入力してね</h1>
       <%= form_with(scope: :user, url: submit_users_path, method: :post) do |f| %>
-       <div class="text-xl my-6">
-        <%= f.label :name, "名前" %><br>
-        <%= f.text_field :name, class: "input input-bordered input-warning w-full max-w-xs" %><br>
-       </div>
-       <div class="text-xl my-6">
-        <%= f.label :birth_date, "誕生日(年/月/日)" %><br>
-        <%= f.date_select :birth_date, { start_year: 1905, end_year: 2025, use_two_digit_numbers: true },
-          class: "select select-warning max-w-xs" %><br>
-       </div>
-       <%= f.submit "検索する", class: "btn btn-wide bg-yellow-400 hover:bg-red-300 text-white text-xl my-6" %>
+        <div class="text-xl my-6">
+          <%= f.label :name, "名前" %><br>
+          <%= f.text_field :name, class: "input input-bordered input-warning w-full max-w-xs" %><br>
+        </div>
+        <div class="text-xl my-6">
+          <%= f.label :birth_month, "誕生月" %><br>
+          <%= f.select :birth_month, (1..12).to_a, class: "select select-warning max-w-xs" %><br>
+        </div>
+        <div class="text-xl my-6">
+          <%= f.label :birth_day, "誕生日" %><br>
+          <%= f.select :birth_day, (1..31).to_a, class: "select select-warning max-w-xs" %><br>
+        </div>
+        <%= f.submit "検索する", class: "btn btn-wide bg-yellow-400 hover:bg-red-300 text-white text-xl my-6" %>
       <% end %>
-  </body>
+    </body>
   </div>
 </div>

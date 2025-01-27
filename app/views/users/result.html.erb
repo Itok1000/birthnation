@@ -3,12 +3,12 @@
     <br>
     <body>
       <p>あなたの名前は <%= @user.name %> です</p>
-      <p>誕生日は <%= @user.birth_date %> です</p>
+      <p>誕生日は <%= @user.birth_month %> 月 <%= @user.birth_day %> 日です</p>
       
       <% if @national_day.present? %>
         <h2>あなたの誕生日に近い国の誕生日</h2>
         <p>国名: <%= @national_day.country_name %></p>
-        <p>建国記念日: <%= @national_day.national_day %></p>
+        <p>建国記念日: <%= @national_day.national_day.strftime("%m月%d日") %></p>
         <p>説明: <%= @national_day.description %></p>
       <% else %>
         <p>あなたの誕生日に近い建国記念日は見つかりませんでした。</p>
@@ -16,4 +16,5 @@
     </body>
   </div>
 </div>
+
 
