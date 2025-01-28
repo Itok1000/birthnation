@@ -35,7 +35,7 @@ class UsersController < ApplicationController
         image: ogp_image
       }
     )
-  end  
+  end
 
   private
 
