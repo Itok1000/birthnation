@@ -24,13 +24,13 @@
       <%= link_to "トップに戻る", root_path, class: "btn btn-wide bg-yellow-400 hover:bg-red-300 text-white text-xl" %>
       <br>
       <% if @national_day.present? %>
-        <%= link_to "https://twitter.com/share?url=#{request.url}&text=私の誕生日(#{@user.birth_month}月#{@user.birth_day}日)に近い国の誕生日は%0a#{@national_day.country_name}の#{@national_day.description}です！%0a%23BirthNation%0a%23建国記念の日%0a%23HBD%0a",
+        <%= link_to "https://twitter.com/share?url=#{request.url}&text=私(#{@user.name})の誕生日(#{@user.birth_month}月#{@user.birth_day}日)に近い国の誕生日は%0a#{@national_day.country_name}の#{@national_day.description}です！%0a%23BirthNation%0a%23建国記念の日%0a%23HBD%0a",
           target: '_blank',
           class: "btn btn-outline inline-flex items-center space-x-2" do %>
           <i class="fa-brands fa-x-twitter inline-block hover:text-white"></i>シェア
         <% end %>
       <% else %>
-        <%= link_to "https://twitter.com/share?url=#{request.url}&text=私の誕生日(#{@user.birth_month}月#{@user.birth_day}日)に近い国の誕生日は見つかりませんでした！%0a%23BirthNation%0a%23建国記念の日%0a%23HBD%0a",
+        <%= link_to "https://twitter.com/share?url=#{request.url}&text=私(#{@user.name})の誕生日(#{@user.birth_month}月#{@user.birth_day}日)に近い国の誕生日は見つかりませんでした！%0a%23BirthNation%0a%23建国記念の日%0a%23HBD%0a",
           target: '_blank',
           class: "btn btn-outline inline-flex items-center space-x-2" do %>
           <i class="fa-brands fa-x-twitter inline-block hover:text-white"></i>シェア
