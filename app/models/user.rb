@@ -6,14 +6,13 @@ class User < ApplicationRecord
 
   def find_closest_national_day
     birth_month_day = Date.new(2000, birth_month, birth_day) # 基準年を2000年に固定
-    days = NationalDay.all.sort_by do |day|
+
+    # ±3日以内の記念日を取得
+    closest_days = NationalDay.all.select do |day|
       national_day_month_day = Date.new(2000, day.national_day.month, day.national_day.day)
-      (birth_month_day - national_day_month_day).abs
+      (birth_month_day - national_day_month_day).abs <= 3
     end
 
-    days.find do |day|
-      national_day_month_day = Date.new(2000, day.national_day.month, day.national_day.day)
-      (birth_month_day - national_day_month_day).abs <= 7
-    end
+    closest_days.sample # ランダムに1つ選ぶ
   end
 end
