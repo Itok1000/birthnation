@@ -14,10 +14,16 @@
     </style>
 </head>
 <body>
-    <footer class="bg-rose-200 h-12 text-white text-2xl flex items-center">
-        <div class='copyright'>
+    <footer class="bg-rose-200 h-12 text-white flex items-center">
             <p>© 2025. Itoken1000</p>
-        </div>
+          <div class="space-x-2 mx-4 lg:mr-40">
+            <%= link_to "https://github.com/Itok1000/birthnation", class: "h-12 w-12 hover:no-underline", target: "_blank" do %>
+              <i class="fa-brands fa-square-github fa-xl" style="color: #ffffff;"></i>
+            <% end %>
+            <%= link_to "https://x.com/Itoken1000", class: "hover:no-underline", target: "_blank" do %>
+              <i class="fa-brands fa-square-x-twitter fa-xl" style="color: #ffffff;"></i>
+            <% end %>
+          </div>
     </footer>
 </body>
 </html>
