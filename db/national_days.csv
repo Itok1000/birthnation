@@ -3,7 +3,7 @@ country_name,national_day,description,remark,image_url
 スーダン,01-01,独立記念日,無し,https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Flag_of_Sudan.svg/320px-Flag_of_Sudan.svg.png
 ハイチ,01-01,独立記念日,無し,https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Flag_of_Haiti.svg/320px-Flag_of_Haiti.svg.png
 インド,01-26,共和国記念日,無し,https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/320px-Flag_of_India.svg.png
-オーストラリア,01-26,オーストラリアの日,無し,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Australia.svg/320px-Flag_of_Australia.svg.png
+オーストラリア,01-26,オーストラリアの日,1788年1月26日に植民を目的としたイギリスの艦隊がシドニー・コーブに到着した事に因んで定められた,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Australia.svg/320px-Flag_of_Australia.svg.png
 ナウル,01-31,独立記念日,無し,https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Flag_of_Nauru.svg/320px-Flag_of_Nauru.svg.png
 日本,02-11,建国記念の日,記紀における初代天皇である神武天皇が即位したとされる日：旧暦1月1日,https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/320px-Flag_of_Japan.svg.png
 スリランカ,02-04,独立記念日,無し,https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Flag_of_Sri_Lanka.svg/320px-Flag_of_Sri_Lanka.svg.png
@@ -112,14 +112,13 @@ country_name,national_day,description,remark,image_url
 ウクライナ,08-24,独立宣言記念日,無し,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/320px-Flag_of_Ukraine.svg.png
 ウルグアイ,08-25,独立記念日,無し,https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Uruguay.svg/320px-Flag_of_Uruguay.svg.png
 モルドバ,08-27,独立記念日,無し,https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Flag_of_Moldova.svg/320px-Flag_of_Moldova.svg.png
-スロバキア,08-29,スロバキア国民蜂起記念日,無し,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Flag_of_Slovakia.svg/320px-Flag_of_Slovakia.svg.png
+スロバキア,08-29,スロバキア国民蜂起記念日,1944年8月29日に、ヨゼフ・ティソのドイツ傀儡政権を倒しチェコスロバキア共和国を再建することを目的に、中部スロバキアのバンスカー・ビストリツァで勃発した日,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Flag_of_Slovakia.svg/320px-Flag_of_Slovakia.svg.png
 キルギス,08-31,独立記念日,無し,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Flag_of_Kyrgyzstan.svg/320px-Flag_of_Kyrgyzstan.svg.png
 トリニダード・トバゴ,08-31,独立記念日,無し,https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Flag_of_Trinidad_and_Tobago.svg/320px-Flag_of_Trinidad_and_Tobago.svg.png
 マレーシア,08-31,独立記念日,無し,https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Flag_of_Malaysia.svg/320px-Flag_of_Malaysia.svg.png
 ウズベキスタン,09-01,独立記念日,無し,https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Uzbekistan.svg/320px-Flag_of_Uzbekistan.svg.png
-スロバキア,09-01,憲法記念日,無し,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Flag_of_Slovakia.svg/320px-Flag_of_Slovakia.svg.png
 リビア,09-01,革命記念日,無し,https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Libya.svg/320px-Flag_of_Libya.svg.png
-ベトナム,09-02,国慶節,無し,https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/320px-Flag_of_Vietnam.svg.png
+ベトナム,09-02,国慶節,1945年9月2日にフランス領インドシナから独立宣言を行ったことを記念した日,https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/320px-Flag_of_Vietnam.svg.png
 サンマリノ,09-03,共和国創立記念日,無し,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Flag_of_San_Marino.svg/320px-Flag_of_San_Marino.svg.png
 エスワティニ,09-06,独立記念日,無し,https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Flag_of_Eswatini.svg/320px-Flag_of_Eswatini.svg.png
 ブラジル,09-07,独立記念日,無し,https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/320px-Flag_of_Brazil.svg.png
@@ -152,7 +151,7 @@ country_name,national_day,description,remark,image_url
 ドイツ,10-03,ドイツ統一の日,1990年10月3日にドイツが再統一したことを記念するドイツ連邦共和国の建国記念日,https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/320px-Flag_of_Germany.svg.png
 レソト,10-04,独立記念日,無し,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Flag_of_Lesotho.svg/320px-Flag_of_Lesotho.svg.png
 ウガンダ,10-09,独立記念日,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Flag_of_Uganda.svg/320px-Flag_of_Uganda.svg.png
-中華民国,10-10,中華民国国慶日（双十節）,辛亥革命の発端となった武昌起義を記念する日,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Flag_of_the_Republic_of_China.svg/320px-Flag_of_the_Republic_of_China.svg.png
+中華民国(台湾),10-10,中華民国国慶日（双十節）,辛亥革命の発端となった武昌起義を記念する日,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Flag_of_the_Republic_of_China.svg/320px-Flag_of_the_Republic_of_China.svg.png
 スペイン,10-12,イスパニアの日,無し,https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/320px-Flag_of_Spain.svg.png
 赤道ギニア,10-12,独立記念日,無し,https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Flag_of_Equatorial_Guinea.svg/320px-Flag_of_Equatorial_Guinea.svg.png
 中央アフリカ共和国,10-12,独立記念日,無し,https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Flag_of_the_Central_African_Republic.svg/320px-Flag_of_the_Central_African_Republic.svg.png
