@@ -6,7 +6,7 @@
       <p>誕生日は <%= @user.birth_month %> 月 <%= @user.birth_day %> 日です</p>
       
       <% if @national_day.present? %>
-        <h2>あなたの誕生日に近い国の誕生日はこちら</h2>
+        <h2 class="font-bold text-red-300">あなたの誕生日に近い国の誕生日はこちら</h2>
         <br>
         <p>
           <img src="<%= @national_day.image_url %>"
@@ -23,6 +23,8 @@
       <%= link_to "もう一度試す", new_users_path, class: "btn btn-wide bg-cyan-400 hover:bg-orange-300 text-white text-xl my-3" %><br>
       <%= link_to "トップに戻る", root_path, class: "btn btn-wide bg-yellow-400 hover:bg-red-300 text-white text-xl" %>
       <br>
+       <p class="font-bold">自分の誕生日と同じ国の記念日をXでみんなに伝えてみよう！</p>
+       <br>
       <% if @national_day.present? %>
         <%= link_to "https://twitter.com/share?url=#{request.url}&text=私(#{@user.name})の誕生日(#{@user.birth_month}月#{@user.birth_day}日)に近い国の誕生日は%0a#{@national_day.country_name}の#{@national_day.description}です！%0a%23BirthNation%0a%23建国記念の日%0a%23HBD%0a",
           target: '_blank',
