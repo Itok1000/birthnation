@@ -4,7 +4,7 @@ class OgpCreator
     GRAVITY = "center"
     TEXT_POSITION = "0,0"
     FONT = "./app/assets/fonts/YuseiMagic-Regular.ttf" # 使用するフォントのパス
-    FONT_SIZE = 65
+    FONT_SIZE = 80
     INDENTION_COUNT = 16
     ROW_LIMIT = 8
 
