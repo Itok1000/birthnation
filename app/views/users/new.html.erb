@@ -2,7 +2,7 @@
   <div class="grid place-items-center">
     <br>
     <body>
-      <h1 class="font-bold text-3xl text-red-300 w-600 min-w-min">あなたの名前と誕生日を入力してね</h1>
+      <h1 class="font-bold text-3xl text-red-300 w-full min-w-min">あなたの名前と誕生日を入力してね</h1>
       <%= form_with(scope: :user, url: submit_users_path, method: :post) do |f| %>
         <div class="text-xl my-6 w-600 min-w-min">
           <%= f.label :name, "名前" %><br>
