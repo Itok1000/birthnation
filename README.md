@@ -3,7 +3,9 @@
 # サービス概要
 ![birthnation](app/assets/images/default_ogp.png)
 サービスURL: **https://living-whippet-itok1000-8f99f3fa.koyeb.app/**
+
 あなたの誕生月日と同じ日あるいは近い日に生まれた国家を探してみよう！
+
 誕生月日を入力するだけで誕生日と同じ日あるいは近い日に生まれた国家が見つかるだけのミニアプリです
 
 # 想定されるユーザー層
