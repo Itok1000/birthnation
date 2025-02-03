@@ -6,7 +6,7 @@ class OgpCreator
     TEXT_POSITION_DESCRIPTION = "0,50" # 記念日の説明を少し下に配置
     FONT = "./app/assets/fonts/RocknRollOne-Regular.ttf" # 使用するフォントのパス
     FONT_SIZE = 80
-    FONT_SIZE_DESCRIPTION = 30
+    FONT_SIZE_DESCRIPTION = 30 # 記念日の説明のフォントの大きさは30に変更
     INDENTION_COUNT = 16
     ROW_LIMIT = 8
 
@@ -21,7 +21,7 @@ class OgpCreator
         config.gravity GRAVITY
         config.pointsize FONT_SIZE
         config.draw "text #{TEXT_POSITION} '#{country_text}'" #　国名
-        config.pointsize FONT_SIZE_DESCRIPTION # 記念日の説明フォントサイズを変更
+        config.pointsize FONT_SIZE_DESCRIPTION # 記念日の説明フォントサイズを変更を反映させる
         config.draw "text #{TEXT_POSITION_DESCRIPTION} '#{description_text}'" # 記念日の名前
       end
     end
