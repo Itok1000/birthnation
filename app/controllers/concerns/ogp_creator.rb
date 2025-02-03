@@ -20,7 +20,7 @@ class OgpCreator
         config.fill "orange"
         config.gravity GRAVITY
         config.pointsize FONT_SIZE
-        config.draw "text #{TEXT_POSITION} '#{country_text}'" #　国名
+        config.draw "text #{TEXT_POSITION} '#{country_text}'" # 　国名
         config.pointsize FONT_SIZE_DESCRIPTION # 記念日の説明フォントサイズを変更を反映させる
         config.draw "text #{TEXT_POSITION_DESCRIPTION} '#{description_text}'" # 記念日の名前
       end
