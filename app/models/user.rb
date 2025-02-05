@@ -12,7 +12,7 @@ class User < ApplicationRecord
       national_day_month_day = Date.new(2000, day.national_day.month, day.national_day.day)
       (birth_month_day - national_day_month_day).abs <= 3
     end
-
-    closest_days.sample # ランダムに1つ選ぶ
+    # 記念日との日数差が最も小さいものを選択
+    closest_days.min_by { |day| (birth_month_day - Date.new(2000, day.national_day.month, day.national_day.day)).abs }
   end
 end
