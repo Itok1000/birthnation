@@ -1,0 +1,27 @@
+<body>
+    <header class="bg-rose-200 h-12 text-white text-2xl flex items-center">
+        <%= link_to "BirthNation", root_path, class: "text-left ml-4" %>
+        <div class='ms-auto relative'>
+            <div class="dropdown dropdown-end">
+                <button class="text-white nav-link focus:outline-none">
+                    Menu
+                </button>
+                <ul tabindex="0" class="dropdown-content menu bg-rose-300 rounded-box z-[1] w-52 p-2 shadow">
+                  <%= link_to 'プライバシーポリシー', '#', class: "nav-link" %>
+                  <%= link_to '利用規約', '#', class: 'nav-link' %>
+                  <%= link_to 'お問い合わせ', '#', class: 'nav-link' %>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropdownButton = document.querySelector('.dropdown > button');
+            const dropdownContent = document.querySelector('.dropdown-content');
+
+            dropdownButton.addEventListener('click', function() {
+                dropdownContent.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>

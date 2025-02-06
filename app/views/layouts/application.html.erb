@@ -30,9 +30,7 @@
 
   <body class="bg-[url('bg_image.png')] bg-cover bg-center">
     <div class="flex flex-col min-h-screen ">
-    <header class="bg-rose-200 h-12 text-white text-2xl flex items-center">
-      <%= link_to "BirthNation", root_path, class: "text-left ml-4" %>
-    </header>
+    <%= render 'shared/header' %>
     <%= render 'shared/flash_message' %>
     <%= yield %>
     <%= render 'shared/footer' %>
