@@ -40,6 +40,7 @@ class UsersController < ApplicationController
     )
   end
 
+
   private
 
   def ogp_image_url(text)
