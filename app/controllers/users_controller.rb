@@ -12,7 +12,7 @@ class UsersController < ApplicationController
 
   def result
     @user = User.find(params[:id])
-    @national_day = @user.find_closest_national_day  # DB から記念日を取得
+    @national_day = @user.find_closest_national_day
 
     # OGP画像のテキスト（国名 + 記念日の日付）
     ogp_text = @national_day.present? ? "#{@national_day.country_name}\n#{@national_day.description}" : "該当なし"
