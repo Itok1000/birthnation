@@ -12,14 +12,14 @@ class UsersController < ApplicationController
 
   def result
     @user = User.find(params[:id])
-    @national_day = @user.find_closest_national_day
-
+    @national_day = @user.find_closest_national_day  # DB から記念日を取得
+  
     # OGP画像のテキスト（国名 + 記念日の日付）
     ogp_text = @national_day.present? ? "#{@national_day.country_name}\n#{@national_day.description}" : "該当なし"
-
+  
     # 動的OGP画像のURL
     ogp_image = @national_day.present? ? ogp_image_url(ogp_text) : default_ogp_image_url
-
+  
     # metaタグの設定
     set_meta_tags(
       title: "#{@user.name}さんの誕生日に近い国の誕生日",
@@ -39,6 +39,7 @@ class UsersController < ApplicationController
       }
     )
   end
+  
 
   private
 
